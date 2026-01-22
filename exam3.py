@@ -16,7 +16,7 @@ with st.form("submit_form"):
     student_id = st.text_input("학번", help="학생의 학번을 작성하세요. (예: 10130)")
 
     # ── 3-1. 서술형 문제 1 표시 ──
-    QUESTION_1 = "기체 입자들의 운동과 온도의 관계를 서술하세요."
+    QUESTION_1 = "판의 구조에 대해 설명하시오."
     st.markdown("#### 서술형 문제 1")
     st.write(QUESTION_1)
     answer_1 = st.text_area("답안을 입력하세요", key="answer1", height=150)
@@ -195,3 +195,4 @@ if st.session_state.gpt_feedbacks:
 
 
     st.success("모든 피드백이 생성되었습니다. (DB 저장용 데이터 준비 완료)")
+
